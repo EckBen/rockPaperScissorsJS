@@ -3,9 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="./rps.css">
 </head>
 <body>
-  
+  <div id="scoreboard-container">
+    <h1 id="scoreboard-heading">Scoreboard</h1>
+    <div class="titles" id="title-player">You</div>
+    <div class="titles" id="title-ties">Ties</div>
+    <div class="titles" id="title-computer">Computer</div>
+    <div class="scores" id="score-player">0</div>
+    <div class="scores" id="score-ties">0</div>
+    <div class="scores" id="score-computer">0</div>
+  </div>
+  <div id="btn-container">
+    <button id='btn-rock' class='choices' value='rock'></button>
+    <button id='btn-paper' class='choices' value='paper'></button>
+    <button id='btn-scissors' class='choices' value='scissors'></button>
+    <button id='btn-newGame' class='hidden'>Start a new game?</button>
+  </div>
+  <div id="commentary">Make your choice to begin a game.<br>The winner will be the first one to 5 points.</div>
+  <script src="./gameLogic.js"></script>
 </body>
 </html>
